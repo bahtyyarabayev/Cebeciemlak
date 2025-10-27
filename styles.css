@@ -35,11 +35,17 @@ body {
 }
 
 .nav-logo {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    color: #2c3e50;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     white-space: nowrap;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Segoe UI', 'Arial Black', sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo-short {
@@ -666,16 +672,18 @@ body {
 @media (max-width: 768px) {
     .nav-container {
         padding: 1rem 0.5rem;
-        display: grid;
-        grid-template-columns: auto 1fr auto auto;
+        display: flex;
         align-items: center;
         gap: 15px;
     }
 
     .nav-logo {
-        font-size: 1rem;
-        letter-spacing: 0.3px;
-        grid-column: 1;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
     
     .nav-menu {
@@ -683,12 +691,11 @@ body {
     }
     
     .nav-actions {
-        grid-column: 3;
+        margin-left: auto;
     }
     
     .nav-toggle {
         display: flex;
-        grid-column: 4;
     }
     
     .logo-full {
@@ -714,6 +721,7 @@ body {
 
     .nav-menu.active {
         left: 0;
+        display: flex;
     }
 
     .language-switcher {
