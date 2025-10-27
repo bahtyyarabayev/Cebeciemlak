@@ -673,6 +673,20 @@ body {
         letter-spacing: 0.3px;
         flex-shrink: 0;
         padding-left: 0;
+        margin-left: auto;
+        order: 5;
+    }
+    
+    .nav-menu {
+        order: 1;
+    }
+    
+    .nav-actions {
+        order: 2;
+    }
+    
+    .nav-toggle {
+        order: 3;
     }
     
     .logo-full {
