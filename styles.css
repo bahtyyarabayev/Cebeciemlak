@@ -666,14 +666,13 @@ body {
 @media (max-width: 768px) {
     .nav-container {
         padding: 1rem 0.5rem;
-        position: relative;
+        justify-content: space-between;
     }
 
     .nav-logo {
         font-size: 1rem;
         letter-spacing: 0.3px;
-        margin-left: 0;
-        margin-right: 0;
+        order: 1;
     }
     
     .nav-menu {
@@ -681,12 +680,13 @@ body {
     }
     
     .nav-actions {
-        margin-left: auto;
-        margin-right: 10px;
+        order: 2;
+        margin: 0;
     }
     
     .nav-toggle {
-        margin-left: 0;
+        display: flex;
+        order: 3;
     }
     
     .logo-full {
@@ -695,10 +695,6 @@ body {
     
     .logo-short {
         display: none;
-    }
-    
-    .nav-actions {
-        padding: 0;
     }
 
     .nav-menu {
@@ -718,17 +714,7 @@ body {
         left: 0;
     }
 
-    .nav-toggle {
-        display: flex;
-    }
-
-    .nav-actions {
-        order: -1;
-    }
-
     .language-switcher {
-        position: absolute;
-        right: 60px;
         padding: 3px;
         gap: 3px;
     }
