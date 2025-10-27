@@ -665,29 +665,31 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-container {
-        padding: 1rem 0.25rem 1rem 0.5rem;
+        padding: 1rem 0rem 1rem 0.5rem;
+        justify-content: flex-start;
     }
 
     .nav-logo {
         font-size: 1rem;
         letter-spacing: 0.3px;
-        flex-shrink: 0;
         padding-left: 0;
         margin-left: auto;
         margin-right: 0;
-        order: 5;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     
     .nav-menu {
-        order: 1;
+        order: -1;
     }
     
     .nav-actions {
-        order: 2;
+        order: -1;
+        margin-right: 10px;
     }
     
     .nav-toggle {
-        order: 3;
+        order: -2;
     }
     
     .logo-full {
