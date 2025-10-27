@@ -39,6 +39,7 @@ body {
     font-weight: bold;
     color: #2c3e50;
     letter-spacing: 2px;
+    white-space: nowrap;
 }
 
 .nav-menu {
@@ -654,6 +655,15 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 1rem;
+    }
+
+    .nav-logo {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -682,6 +692,13 @@ body {
     .language-switcher {
         position: absolute;
         right: 60px;
+        padding: 3px;
+        gap: 3px;
+    }
+
+    .lang-btn {
+        padding: 6px 12px;
+        font-size: 0.85rem;
     }
 
     .logo {
