@@ -91,6 +91,7 @@ html {
     display: flex;
     flex-direction: column;
     line-height: 1.3;
+    justify-content: center; /* Dikeyde ortalamak için */
 }
 
 .support-text span {
@@ -102,6 +103,32 @@ html {
     font-size: 0.75rem;
     opacity: 0.9;
 }
+
+/* Support Notification */
+.support-notification {
+    position: fixed;
+    bottom: 110px; /* Canlı destek butonunun üzerinde */
+    right: 30px;
+    background-color: #fff;
+    color: #333;
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 998;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    visibility: hidden;
+}
+
+.support-notification.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
 
 @keyframes pulse {
     0%, 100% {
@@ -154,6 +181,13 @@ html {
     
     .support-text small {
         font-size: 0.7rem;
+    }
+
+    .support-notification {
+        bottom: 95px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
 }
 
