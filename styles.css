@@ -32,7 +32,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
 }
 
 .nav-logo {
@@ -41,7 +40,6 @@ body {
     color: #2c3e50;
     letter-spacing: 2px;
     white-space: nowrap;
-    order: 1;
 }
 
 .logo-short {
@@ -56,7 +54,6 @@ body {
     display: flex;
     gap: 1.5rem;
     list-style: none;
-    order: 2;
 }
 
 .nav-link {
@@ -90,7 +87,6 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    order: 4;
 }
 
 .nav-toggle span {
@@ -105,7 +101,7 @@ body {
 .nav-actions {
     display: flex;
     align-items: center;
-    order: 3;
+    margin-left: auto;
 }
 
 .language-switcher {
@@ -669,15 +665,15 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-container {
-        padding: 1rem 0.75rem;
-        gap: 0.75rem;
+        padding: 1rem 0.5rem;
+        gap: 0.5rem;
     }
 
     .nav-logo {
         font-size: 1rem;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.3px;
         flex-shrink: 0;
-        order: 1;
+        padding-left: 0;
     }
     
     .logo-full {
