@@ -32,6 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .nav-logo {
@@ -42,9 +43,17 @@ body {
     white-space: nowrap;
 }
 
+.logo-short {
+    display: none;
+}
+
+.logo-full {
+    display: inline;
+}
+
 .nav-menu {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     list-style: none;
 }
 
@@ -656,12 +665,26 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-container {
-        padding: 1rem;
+        padding: 1rem 0.5rem;
+        gap: 0.5rem;
     }
 
     .nav-logo {
-        font-size: 1.1rem;
-        letter-spacing: 1px;
+        font-size: 0.9rem;
+        letter-spacing: 0.3px;
+        flex-shrink: 0;
+    }
+    
+    .logo-full {
+        display: inline;
+    }
+    
+    .logo-short {
+        display: none;
+    }
+    
+    .nav-actions {
+        padding: 0;
     }
 
     .nav-menu {
