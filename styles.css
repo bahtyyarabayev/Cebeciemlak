@@ -681,12 +681,17 @@ body {
     
     .nav-actions {
         order: 2;
-        margin: 0;
+        margin-right: 10px;
     }
     
     .nav-toggle {
         display: flex;
         order: 3;
+    }
+    
+    .nav-container {
+        display: flex;
+        align-items: center;
     }
     
     .logo-full {
