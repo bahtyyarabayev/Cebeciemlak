@@ -1,3 +1,14 @@
+// Loading Screen
+window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    setTimeout(function() {
+        loadingScreen.classList.add('hidden');
+        setTimeout(function() {
+            loadingScreen.style.display = 'none';
+        }, 500);
+    }, 1500);
+});
+
 // Language Switcher
 document.addEventListener('DOMContentLoaded', function() {
     let currentLanguage = 'tr';
