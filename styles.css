@@ -666,7 +666,8 @@ body {
 @media (max-width: 768px) {
     .nav-container {
         padding: 1rem 0.5rem;
-        display: flex;
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
         align-items: center;
         gap: 15px;
     }
@@ -674,6 +675,7 @@ body {
     .nav-logo {
         font-size: 1rem;
         letter-spacing: 0.3px;
+        grid-column: 1;
     }
     
     .nav-menu {
@@ -681,17 +683,12 @@ body {
     }
     
     .nav-actions {
-        margin-left: auto;
+        grid-column: 3;
     }
     
     .nav-toggle {
         display: flex;
-    }
-    
-    .nav-logo,
-    .nav-actions,
-    .nav-toggle {
-        flex-shrink: 0;
+        grid-column: 4;
     }
     
     .logo-full {
