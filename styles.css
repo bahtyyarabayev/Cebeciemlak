@@ -666,13 +666,14 @@ body {
 @media (max-width: 768px) {
     .nav-container {
         padding: 1rem 0.5rem;
-        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        gap: 15px;
     }
 
     .nav-logo {
         font-size: 1rem;
         letter-spacing: 0.3px;
-        order: 1;
     }
     
     .nav-menu {
@@ -680,18 +681,17 @@ body {
     }
     
     .nav-actions {
-        order: 2;
-        margin-right: 10px;
+        margin-left: auto;
     }
     
     .nav-toggle {
         display: flex;
-        order: 3;
     }
     
-    .nav-container {
-        display: flex;
-        align-items: center;
+    .nav-logo,
+    .nav-actions,
+    .nav-toggle {
+        flex-shrink: 0;
     }
     
     .logo-full {
