@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
                 entry.target.style.transform = 'translateY(0)';
-                // observer.unobserve(entry.target); // İsteğe bağlı: Animasyon bir kez tetiklendikten sonra durdurulabilir.
+                // observer.unobserve(entry.target); // İsteğe bağlı: Animasyon bir kez tetiklendikten sonra durulabilir.
             }
         });
     }, observerOptions);
