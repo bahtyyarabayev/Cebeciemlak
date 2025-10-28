@@ -19,12 +19,14 @@
         <div class="support-icon">💬</div>
         <div class="support-text">
             <span>Canlı Destek</span>
-        </div>
+            </div>
     </a>
-
+    
     <div class="support-notification" id="supportNotification">
-        Size nasıl yardımcı olabilirim?
+        <span class="notification-icon">💬</span> Size nasıl yardımcı olabilirim?
     </div>
+    
+    <audio id="notificationSound" src="https://assets.mixkit.co/sfx/preview/mixkit-software-interface-start-2574.mp3" preload="auto"></audio>
 
 
     <nav class="navbar" id="navbar">
@@ -34,6 +36,7 @@
                 <li><a href="#home" class="nav-link" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
                 <li><a href="#services" class="nav-link" data-tr="Hizmetlerimiz" data-en="Services">Hizmetlerimiz</a></li>
                 <li><a href="#listings" class="nav-link" data-tr="İlanlar" data-en="Listings">İlanlar</a></li>
+                <li><a href="#testimonials" class="nav-link" data-tr="Müşteri Yorumları" data-en="Reviews">Müşteri Yorumları</a></li>
                 <li><a href="#contact" class="nav-link" data-tr="İletişim" data-en="Contact">İletişim</a></li>
             </ul>
             <div class="nav-actions">
@@ -184,6 +187,51 @@
         </div>
     </section>
 
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title" data-tr="Müşteri Yorumları" data-en="Customer Reviews">Müşteri Yorumları</h2>
+            <p class="section-subtitle" data-tr="Bizimle çalışanlar ne dedi?" data-en="What our clients say">Bizimle çalışanlar ne dedi?</p>
+            
+            <div class="testimonial-slider-container">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-tr="Cebeci Emlak sayesinde hayalimizdeki evi bulduk. Süreç boyunca çok profesyonel ve yardımcı oldular. Herkese tavsiye ederim!" data-en="Thanks to Cebeci Emlak, we found our dream home. They were very professional and helpful throughout the process. I highly recommend them!">"Cebeci Emlak sayesinde hayalimizdeki evi bulduk. Süreç boyunca çok profesyonel ve yardımcı oldular. Herkese tavsiye ederim!"</p>
+                        <p class="testimonial-author">- Ayşe Yılmaz</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-tr="Arsamı satmak için başvurdum ve çok kısa sürede, değerinde bir satış gerçekleştirdiler. Güvenilir ve hızlı hizmet." data-en="I applied to sell my land, and they completed the sale very quickly and at a good value. Reliable and fast service.">"Arsamı satmak için başvurdum ve çok kısa sürede, değerinde bir satış gerçekleştirdiler. Güvenilir ve hızlı hizmet."</p>
+                        <p class="testimonial-author">- Mehmet Öztürk</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-tr="Kiralık ev arayışımda bana çok yardımcı oldular. Tam istediğim gibi bir yer buldular ve tüm işlemleri kolayca hallettiler. Teşekkürler!" data-en="They helped me a lot in my search for a rental house. They found exactly what I was looking for and handled all the procedures easily. Thank you!">"Kiralık ev arayışımda bana çok yardımcı oldular. Tam istediğim gibi bir yer buldular ve tüm işlemleri kolayca hallettiler. Teşekkürler!"</p>
+                        <p class="testimonial-author">- Elif Kaya</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-tr="Profesyonel yaklaşımları ve bölgeye olan hakimiyetleri sayesinde yatırım için harika bir mülk edindim. Çok memnun kaldım." data-en="Thanks to their professional approach and knowledge of the area, I acquired a great property for investment. I am very satisfied.">"Profesyonel yaklaşımları ve bölgeye olan hakimiyetleri sayesinde yatırım için harika bir mülk edindim. Çok memnun kaldım."</p>
+                        <p class="testimonial-author">- Ali Demir</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-tr="Evimizi satarken her adımda bilgilendirildik. Süreç çok şeffaf ve sorunsuz ilerledi. Cebeci Emlak'a teşekkürler." data-en="We were kept informed at every step while selling our house. The process was very transparent and smooth. Thanks to Cebeci Emlak.">"Evimizi satarken her adımda bilgilendirildik. Süreç çok şeffaf ve sorunsuz ilerledi. Cebeci Emlak'a teşekkürler."</p>
+                        <p class="testimonial-author">- Zeynep Can</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title" data-tr="İletişim" data-en="Contact">İletişim</h2>
@@ -286,6 +334,7 @@
                     <li><a href="#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
                     <li><a href="#services" data-tr="Hizmetlerimiz" data-en="Services">Hizmetlerimiz</a></li>
                     <li><a href="#listings" data-tr="İlanlar" data-en="Listings">İlanlar</a></li>
+                    <li><a href="#testimonials" data-tr="Müşteri Yorumları" data-en="Reviews">Müşteri Yorumları</a></li>
                     <li><a href="#contact" data-tr="İletişim" data-en="Contact">İletişim</a></li>
                 </ul>
             </div>
